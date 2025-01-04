@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin and User Management</title>
+  <link rel="stylesheet" href="user.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon" onclick="opensidebar()">
+        <i class='bx bx-menu'></i>
+      </div>
+      <!--<div class="header-left">
+        <i class='bx bx-search'></i>
+      </div> -->
+      <div class="header-right">
+        <i class='bx bx-user-circle'></i>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <i class='bx bxs-user-rectangle'></i> Admin
+        </div>
+        <i class='bx bx-window-close' onclick="closesidebar()"></i>
+      </div>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="../dashboard.html">
+            <i class='bx bxs-dashboard'></i> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="user.html">
+            <i class='bx bxs-user-pin'></i> User Management
+          </a>
+        </li>
+
+        <li class="sidebar-list-item">
+          <i class='bx bx-question-mark'></i>  Faq Management
+      </li>
+
+      <li class="sidebar-list-item">
+          <i class='bx bxs-calendar-event'></i> Event Management
+      </li>
+
+      <li class="sidebar-list-item">
+          <i class='bx bx-list-check'></i>  To Do list
+      </li>
+
+      <li class="sidebar-list-item">
+          <i class='bx bxs-dashboard'></i>  Online Billing
+      </li>
+        
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <div class="main-title">
+        <h2>Admin and User Management</h2>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" id="admin-tab">Admin Management</button>
+        <button class="tab" id="user-tab">User Management</button>
+      </div>
+      
+      <div class="content active" id="admin-management">
+        <!-- Admin Table and Actions (Existing Content) -->
+        <div class="search-bar">
+          <input type="text" placeholder="Search Admin">
+          <button class="search-btn">Search Admin</button>
+        </div>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Admin Username</th>
+              <th>Admin Email</th>
+              <th>Active Time</th>
+              <th>Log out time</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Admin1</td>
+              <td>admin1@example.com</td>
+              <td>09:00 AM</td>
+              <td>05:00 PM</td>
+              <td>
+                <button class="edit-btn"><i class='bx bxs-edit'></i></button>
+                <button class="delete-btn"><i class='bx bx-message-square-x' ></i></button>
+              </td>
+            </tr>
+            <!-- Additional Admins -->
+          </tbody>
+        </table>
+        <button class="add-admin-btn">Add Admin</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="user.js"></script>
+</body>
+</html>

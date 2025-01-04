@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="menu-icon" onclick="opensidebar()">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="header-left">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="header-right">
+                <i class='bx bxs-bell'></i>
+                <i class='bx bxs-envelope'></i>
+                <i class='bx bx-user-circle'></i>
+            </div>
+        </header>
+
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <i class='bx bxs-user-rectangle' style="height: 10px; width: 20px;" ></i> Admin
+                </div>
+                <i class='bx bx-window-close' onclick="closesidebar()" ></i>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="dashboard.html">
+                        <i class='bx bxs-dashboard'></i> Dashboard
+                    </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                    <a href="UserM/user.html">
+                        <i class='bx bxs-user-pin'></i>  User Management
+                    </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                    <i class='bx bx-question-mark'></i>  Faq Management
+                </li>
+
+                <li class="sidebar-list-item">
+                    <i class='bx bxs-calendar-event'></i>  Event Management
+                </li>
+
+                <li class="sidebar-list-item">
+                    <i class='bx bx-list-check'></i>  To Do list
+                </li>
+
+                <li class="sidebar-list-item">
+                    <i class='bx bxs-dashboard'></i>  Online Billing
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-container">
+            <div class="main-title">
+                <H2>Dashboard</H2>
+            </div>
+
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Users</h3>
+                        <i class='bx bxs-user-pin'></i>
+                    </div>
+                    <h1>249</h1>
+                </div>
+               
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>FAQ</h3>
+                        <i class='bx bxs-user-pin'></i>
+                    </div>
+                    <h1>25</h1>
+                </div>
+                
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>B&B</h3>
+                        <i class='bx bxs-user-pin'></i>
+                    </div>
+                    <h1>1500</h1>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="charts-card">
+                    <h2 class="chart-title">Users</h2>
+                    <div id="bar-chart"></div>
+                  </div>
+        
+                  <div class="charts-card">
+                    <h2 class="chart-title">B&B Purchase</h2>
+                    <div id="area-chart"></div>
+                  </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

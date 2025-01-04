@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Easyme</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" alt="Thamma logo ekk hadala naha" class="logo">
+            <ul>
+                <li><a href="/Home/Home.html">Home</a></li>
+                <li><a href="/ContactUs/contactUs.html">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">B&B Plan</a> <i class='bx bxs-crown' style='color:#e2f50a' ></i></li>
+                <li><a href="#">ToDo List</a></li>
+                <li><a href="#">Time Plan</a></li>
+            </ul>
+        </div>
+    <main>
+        <section class="about-section">
+            <div class="image-container">
+                <img src="aboutus2.webp" alt="Image Description">
+            </div>
+            <div class="text-container">
+                <h2>About Us</h2>
+                <p>"Welcome to <span>EasyMe</span>, your trusted event planning partner. We create unforgettable experiences with attention to detail, personalized service, and seamless execution, making every event stress-free and truly special."</p>
+                <p>"At <span>EasyMe,</span> we pride ourselves on blending creativity with professionalism to bring your vision to life. Whether it’s a wedding, corporate event, or private party, we ensure every detail exceeds expectations."</p>
+                <button class="read-more-btn" onclick="openPopup()">Read More</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Thank you for choosing <span>Easyme.</span>We look forward to welcoming you and creating unforgettable moments for you and your loved ones, making every occasion truly special."</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <section class="history">
+                <h2>Who we are?</h2>
+                <p>"Easy Me was founded with the belief that event planning should be stress-free, innovative, and tailored to your vision. With a dedicated team of professionals, we’ve been turning dreams into reality since [2022]."</p>
+            </section>
+            <section class="management">
+                <h2> What We Do?</h2>
+                <p>"From corporate events to intimate gatherings, we ensure every detail is managed with precision. Our services include event planning, vendor coordination, and on-the-day management."</p>
+            </section>
+            <section class="vision">
+                <h2>Our Vision</h2>
+                <p>"Our vision is to revolutionize event management by making it accessible, stress-free, and tailored to each client’s unique needs. We aim to set a benchmark in the industry by combining innovation, creativity, and unparalleled customer service."</p>
+            </section>
+            <section class="mission">
+                <h2>Our Mission</h2>
+                <p>"At Easy Me, our mission is simple: to create unforgettable experiences for every client. We believe in transforming ideas into remarkable moments that you and your guests will cherish forever."</p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+          document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+           document.getElementById("popup").style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
